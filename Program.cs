@@ -15,7 +15,7 @@
 // a = -3 b = 9 -> нет
 
 
-// Console.WriteLine("ВВедите первое число: "); // текст подсказка которая помогает получить первое число
+// Console.WriteLine("Введите первое число: "); // текст подсказка которая помогает получить первое число
 // int firstNumber = Convert.ToInt32(Console.ReadLine());  
 
 // Console.WriteLine("ВВедите второе число: ");
@@ -55,7 +55,8 @@
 //     negativeNumber++;
 
 // }
-// ==============================================================================================================================
+// 
+// Практическое задание 1.
 
 // Задача 2. Напишите программу, которая на вход принимает два числа
 // и выдает какое число большее, а какое меньшее
@@ -71,36 +72,35 @@
 // int secondNumber = Convert.ToInt32(Console.ReadLine());
 // if (firstNumber == secondNumber)
 //     {
-//         System.Console.WriteLine("Числа равны");
+//         Console.WriteLine("Числа равны");
 //     }
 
 //     else if (firstNumber < secondNumber)
 //     {
-//     System.Console.WriteLine(secondNumber + " " + "наибольшее число");
-//     System.Console.WriteLine(firstNumber + " " + "наименьшее число");
+//     Console.WriteLine(secondNumber + " " + "наибольшее число");
+//     Console.WriteLine(firstNumber + " " + "наименьшее число");
 //     }
 //     else
 //     {
-//     System.Console.WriteLine(firstNumber + " " + "наибольшее число");
-//     System.Console.WriteLine(secondNumber + " " + "наименьшее число");
+//     Console.WriteLine(firstNumber + " " + "наибольшее число");
+//     Console.WriteLine(secondNumber + " " + "наименьшее число");
 //     }
 
 //  git commit -am "Напишите программу, которая на вход принимает два числа и выдает какое число большее, а какое меньшее"
 
-// 4.Напиште программу, которая на вход принимает три числа и выдаёт максимальное из этих чисел
+// Задача 4. Напиште программу, которая на вход принимает три числа и выдаёт максимальное из этих чисел
+// 2, 3, 7 -> 7
+// 44 5 78 -> 78
+// 22 3 9 -> 22
 
 // Console.Clear();
-
 // Console.WriteLine("Введите первое число: ");
-
 // int firstNumber = Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine("Введите второе число: ");
-
 // int secondNumber = Convert.ToInt32(Console.ReadLine());
 
 // Console.WriteLine("Введите третье число: ");
-
 // int thirdNumber = Convert.ToInt32(Console.ReadLine());
 
 // if ((firstNumber > secondNumber) & (firstNumber > thirdNumber))
@@ -112,21 +112,23 @@
 // else 
 //     System.Console.WriteLine(thirdNumber + " " + "наибольшее число");
 
+
+
 // Задача 6.Напишите программу, которая на вход принимает число и выдаёт,
 //  является ли число чётным (делитлся ли оно на два без остатка).    
 
 // Console.Clear();
-
 // Console.WriteLine("Введите число: ");
-
 // int number = Convert.ToInt32(Console.ReadLine());
 
 // if (number %2 == 1)
 
 // {
-// Console.WriteLine("нечетное число");    
+//      Console.WriteLine("нечетное число");    
 // }
 // else Console.WriteLine("четное число");
+
+
 
 // Задача 8. Напишите программу, которая на вход приничиет число (N), 
 // а на выходе показывает все четные числа от 1 до N 
@@ -234,234 +236,8 @@
 //     }
 // }
 
-// 9. Напишите программу, которая выводит случайное число из отрезка [10, 99] и показывает наибольшую цифру числа.
-// 78 -> 8 
-// 12-> 2 
-// 85 -> 8
 
-// int number = new Random ().Next(10,100);
 
-// int firstDigit = number / 10; // первая цифра числа 78 -> 7 
-
-// int secondDigit = number % 10; // вторая цифра числа: 78 -> 8
-
-// int max = firstDigit; // Пусть максимум - первая цифра числа
-
-// if (secondDigit > max) //max = 5, second digit = 10
-// {
-//     max = secondDigit;
-// }
-// Console.Clear();
-// System.Console.WriteLine("Исходное число: " + number);
-// System.Console.WriteLine("Максимальное число: " + max);
-
-
-
-
-
-// 11. Напишите программу, которая выводит случайное трёхзначное число и удаляет вторую цифру этого числа.
-// 456 -> 46
-// 782 -> 72
-// 918 -> 98
-
-
-// int number = new Random ().Next(100,1000); // 100 - 999
-
-// int firstDigit = number / 100;
-
-// int thirdDigit = number % 10;
-
-// System.Console.WriteLine("исходное число: " + number);
-
-// int result = firstDigit * 10 + thirdDigit;
-// System.Console.WriteLine("результат: " + result); 
-
-
-
-// 12. Напишите программу, которая будет принимать на вход два числа и выводить, является ли второе число кратным первому. 
-// Если число 2 не кратно числу 1, 
-// то программа выводит остаток от деление.
-// 34, 5 -> не кратно, остаток 4 
-// 16, 4 -> кратно
-
-// System.Console.WriteLine("enter firsts number: ");
-
-// int firstNumber = Convert.ToInt32(Console.ReadLine());
-
-// System.Console.WriteLine("enter second number:");
-
-// int secondNumber = Convert.ToInt32(Console.ReadLine());
-
-// int result = firstNumber % secondNumber;
-
-// if (result > 0)
-
-//     System.Console.WriteLine("не кратно, остаток " + result);
-//     else 
-//     System.Console.WriteLine("кратно");
-
-// 14. Напишите программу, которая принимает на вход число и проверяет, кратно ли оно одновременно 7 и 23.
-// 14 -> нет 
-// 46 -> нет 
-// 161 -> да
-
-// System.Console.WriteLine("enter number: ");
-// int Number = Convert.ToInt32(Console.ReadLine());
-
-// if (Number % 7 == 0 && Number % 23 == 0)
-// System.Console.WriteLine("yes");
-// else
-// System.Console.WriteLine("no");
-
-
-// Задача 10: Напишите программу, которая принимает на вход трёхзначное число и на выходе показывает вторую цифру этого числа.
-// 456 -> 5
-// 782 -> 8
-// 918 -> 1
-
-
-// Console.Clear();
-// Console.WriteLine("Введите трёхзначное число: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// string stringIndex = Convert.ToString(number);
-// Console.WriteLine("вторая цифра: " + stringIndex[1]);
-
-
-// Задача 13: Напишите программу, которая выводит третью цифру заданного числа или сообщает, что третьей цифры нет.
-// 645 -> 5
-// 78 -> третьей цифры нет
-// 32679 -> 6
-
-
-// Console.Clear();
-// Console.WriteLine("Введите число: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// string stringIndex = Convert.ToString(number);
-// if (stringIndex.Length > 2 ) // Если сделать stringIndex.Leght < 2 и вывод "третьей цифры нет" почему-то пишет ошибку, что .. 
-// Console.WriteLine("третья цифра: " + stringIndex[2]); // .. искомое число за пределами массива
-// else 
-// Console.WriteLine("третьей цифры нет");
-
-
-// Задача 15: Напишите программу, которая принимает на вход цифру, обозначающую день недели, и проверяет, является ли этот день выходным.
-// 6 -> да
-// 7 -> да
-// 1 -> нет
-
-
-// Console.Clear();
-// System.Console.WriteLine("Введите число, обозначающее день недели от 1 до 7: ");
-// int number = Convert.ToInt32(Console.ReadLine());
-// if (number == 7 || number == 6) Console.WriteLine("да"); // "||"оператор ИЛИ 
-// else if (number < 1 || number > 7)
-//     System.Console.WriteLine("ошибка ввода");
-// else
-//     System.Console.WriteLine("нет");
-// Console.Beep();
-
-
-// Console.Write("Введите первое число > ");
-// int x = Convert.ToInt32(Console.ReadLine());
-// Console.Write("Введите второе число > ");
-// int y = Convert.ToInt32(Console.ReadLine());
-
-// if (x>0 && y>0)
-// {
-//     Console.WriteLine("Точка в первой четверти");
-// }
-// else if (x<0 && y>0) Console.WriteLine("Точка во второй четверти");
-// else if (x<0 && y<0) Console.WriteLine("Точка в третьей четверти");
-// else if (x>0 && y<0) Console.WriteLine("Точка в четвертой четверти");
-// else Console.WriteLine("вы в начале координат!");
-
-
-// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 2D пространстве.
-// A (3,6); B(2, 1)-> 5,09
-// A(7, -5); B(1, -1)-> 7,21
-
-
-// формула расстояния между точками М в 2д пространстве
-// M1(x1; y1) и M2(x2; y2 ) 
-
-// Console.WriteLine("Введите координату х1: ");
-// int x1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату y1: ");
-// int y1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату х2: ");
-// int x2 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату y2: ");
-// int y2 = Convert.ToInt32(Console.ReadLine());
-
-
-// //double d = Math.Sqrt((x2-x1) * (x2-x1)) + ((y2-y1)*(y2-y1)) 
-// // Math.Pow (2,3) => 8 = (2 * 2 * 2) 
-// double d = Math.Sqrt(Math.Pow(x2 - x1, 2) + Math.Pow(y2 - y1, 2));
-// //Console.WriteLine("расстояние между двумя точками = " + Math.Round(d,3));
-// Console.WriteLine($"Расстояние между двумя точками: {Math.Round(d,3)}"); // интерполяция
-
-
-// Задача 22: Напишите программу, которая принимает на вход число (N) и выдаёт таблицу квадратов чисел от 1 до N.
-// 5 -> 1, 4, 9, 16, 25.
-// 2 -> 1,4
-
-// Console.WriteLine("Введите число n: ");
-// int finish = Convert.ToInt32(Console.ReadLine());
-
-// int start = 1;
-
-// while (start <= finish)
-// {
-//     Console.WriteLine(Math.Pow(start, 2));
-//     start++;
-// }
-
-//тоже самое только с циклом фор
-
-// Console.WriteLine("Введите число n: ");
-
-// int finish = Convert.ToInt32(Console.ReadLine());
-
-// for (int start = 1; start <= finish; start++;)
-// { 
-//     Console.WriteLine(Math.Pow(start,2) + " ");
-// }
-
-
-// Задача 19
-// Напишите программу, которая принимает на вход пятизначное число и проверяет, является ли оно палиндромом.
-// 14212 -> нет
-// 12821 -> да
-// 23432 -> да
-
-
-// Задача 21
-// Напишите программу, которая принимает на вход координаты двух точек и находит расстояние между ними в 3D пространстве.
-// A (3,6,8); B (2,1,-7), -> 15.84
-// A (7,-5, 0); B (1,-1,9) -> 11.53
-
-
-// Console.WriteLine("Введите координату х1: ");
-// int x1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату y1: ");
-// int y1 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату х2: ");
-// int x2 = Convert.ToInt32(Console.ReadLine());
-// Console.WriteLine("Введите координату y2: ");
-// int y2 = Convert.ToInt32(Console.ReadLine());
-
-// Задача 23
-// Напишите программу, которая принимает на вход число (N) и выдаёт таблицу кубов чисел от 1 до N.
-// 3 -> 1, 8, 27
-// 5 -> 1, 8, 27, 64, 125
-
-
-// Console.WriteLine("Введите число n: ");
-
-// int finish = Convert.ToInt32(Console.ReadLine());
-// for (int start = 1; start <= finish; start++;)
-// { 
-//     Console.WriteLine(Math.Pow(start,3) + " ");
-// }
 
 
 
@@ -559,4 +335,112 @@
 // }
 // var str = string.Join(", ", GetArray());
 // Console.WriteLine("[" + str + "]");
+
+
+// [1,40,20,30] => 30,800
+
+// int[] startArray = { 1, 2, 3, 4, 5 };
+// int size = startArray.Length / 2; // 2 + 0/1
+// Console.WriteLine(size);
+// int[] result = new int[size];
+
+
+// int first = 0; // Первый элемент из массива startArray
+// int last = startArray.Length - 1; // 4 - индекс последнего элемента
+// int i = 0; // Индекс результирующего массива
+
+// while (last > first)
+// {
+//     result[i] = startArray[first] * startArray[last];
+//     i++; //  result[0],  result[1]
+//     first++;
+//     last--;
+// }
+// Console.WriteLine(String.Join(", ", result));
+
+
+// Задача 39: Напишите программу, которая перевернёт одномерный массив (последний элемент будет на первом месте, 
+// а первый - на последнем и т.д.)
+// [1 2 3 4 5] -> [5 4 3 2 1]
+// [6 7 3 6] -> [6 3 7 6]
+
+// int[] GetArray(int size, int minValue, int maxValue)
+// {
+//     int[] tempArray = new int[size];
+//     for (int i = 0; i < size; i++)
+//     {
+//         tempArray[i] = new Random().Next(minValue, maxValue + 1);
+//     }
+//     return tempArray;
+// }
+// int[] array = GetArray(6, 0, 10); // Массив на 6 элементов от 0 до 10
+
+// // 1. Запись массива справо - налево
+// int[] CopyReverseArray(int[] array)
+// {
+//     int size = array.Length; 
+//     int[] result = new int[size]; // Копия - такой же размер
+//     int last = size - 1;
+//     for (int i = 0; i < size; i++) // i++ - слево - направо
+//     {
+//         result[i] = array[last - i]; // Последний элемент - текущий
+//     }
+//     return result;
+// }
+// Console.WriteLine(String.Join("; ", array));
+
+// Console.WriteLine($"Copy: {String.Join(", ", CopyReverseArray(array))}");
+
+
+// // 2. Метод пузырька
+// void BubbleSort(int[] array)
+// {
+//     int size = array.Length;
+//     int last = size - 1;
+//     for (int i = 0; i < size / 2; i++)
+//     {
+//         int temp = array[i]; //temp = a[0,], temp = 1
+//         array[i] = array[last - i]; // a[0] = a[3] =>
+//         array[last - i] = temp; // temp = 1, a[3] = 1 => {4,2,3,1}
+//     }
+// }
+// BubbleSort(array);
+// Console.WriteLine($"Bubble: {String.Join(", ", array)}");
+
+
+// Задача 40: Напишите программу, которая принимает на вход три числа и проверяет, 
+// может ли существовать треугольник с сторонами такой длины.
+// Теорема о неравенстве треугольника: каждая сторона треугольника меньше суммы двух других сторон
+
+// int a = 2;
+// int b = 3;
+// int c = 4; // эти переменные можно удалить и ввести значения сразу в выводе
+
+// bool IsTriangle(int a, int b, int c)
+// {
+//     return ((a + b) > c && (a + c) > b && (b + c) > a);
+// }
+// Console.WriteLine(IsTriangle(a,b,c));   // вот так: Console.WriteLine(IsTriangle(10000,5,4));  
+
+// Задача 44: Не используя рекурсию, выведите первые N чисел Фибоначчи. Первые два числа Фибоначчи: 0 и 1.
+// Если N = 5 -> 0 1 1 2 3
+// Если N = 3 -> 0 1 1
+// Если N = 7 -> 0 1 1 2 3 5 8
+
+// "арифметический" метод решения 
+
+// int firstElement = 0;
+// int secondElement = 1;
+// int number = 8; // количество чисел Фибоначчи 0, 1, 1, 2
+// Console.WriteLine($"1 элемент: {firstElement} ");
+// Console.WriteLine($"2 элемент: {secondElement} ");
+
+// for (int i = 3; i <= number; i++)
+// {
+//     int nextElement = firstElement + secondElement; // next = 0 + 1 == 1
+//     Console.WriteLine($"{i} элемент: {nextElement} ");
+//     firstElement = secondElement;
+//     secondElement = nextElement;
+// }
+
 
